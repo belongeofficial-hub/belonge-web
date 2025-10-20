@@ -8,17 +8,18 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email } = body;
 
-    const message = `
-      <div style="
-        font-family: 'Segoe UI', Arial, sans-serif;
-        background-color: #fafafa;
-        color: #222;
-        padding: 32px;
-        border-radius: 12px;
-        max-width: 600px;
-        margin: auto;
-        line-height: 1.6;
-      ">
+   const message = `
+  <div style="
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+  ">
+
         <div style="text-align:center; margin-bottom: 24px;">
           <img
             src="https://belonge-assets.s3.eu-west-2.amazonaws.com/logo.png"
@@ -33,8 +34,8 @@ export async function POST(req: Request) {
         <p>Hi ${name},</p>
 
         <p>
-          Thank you for joining the <strong>Belonge</strong> waitlist — we’re so glad you’re here 💜  
-          You’ve just joined a community that’s redefining how people connect — a safe, uplifting space where you can find your people, build real community, and access support that helps you grow.
+          Thank you for joining the <strong>Belonge</strong> waitlist — we are so glad you’re here 💜  
+          You've just joined a community that's redefining how people connect — a safe, uplifting space where you can find your people, build real community, and access support that helps you grow.
         </p>
 
         <p>
@@ -59,18 +60,18 @@ export async function POST(req: Request) {
         </div>
 
         <p>
-          We’ll be in touch soon with early access details and updates as we prepare for launch.
+          We'll be in touch soon with early access details and updates as we prepare for launch.
         </p>
 
         <p style="margin-top:30px;">
           Warm regards,<br/>
           <strong>The Belonge Team</strong><br/>
-          💜 You’re never alone. You Belonge.
+          💜 You're never alone. You Belonge.
         </p>
 
         <hr style="border:none; border-top:1px solid #ddd; margin:32px 0;">
         <p style="font-size:13px; color:#777; text-align:center;">
-          You’re receiving this email because you joined the Belonge waitlist.<br/>
+          You're receiving this email because you joined the Belonge waitlist.<br/>
           © ${new Date().getFullYear()} Belonge. All rights reserved.
         </p>
       </div>
@@ -84,7 +85,7 @@ await resend.emails.send({
   html: `
     <div style="font-family: Arial, sans-serif; color: #333;">
       <h2>Welcome to <span style="color:#7B61FF;">Belonge 💜</span></h2>
-      <p>We’re excited to have you join our community.</p>
+      <p>We're excited to have you join our community.</p>
       <p>Connect, meet, and grow with people who share your interests.</p>
       <p style="margin-top:20px;">Warm regards,<br><strong>The Belonge Team</strong></p>
     </div>
