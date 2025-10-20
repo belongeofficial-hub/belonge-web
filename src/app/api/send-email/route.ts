@@ -37,7 +37,6 @@ export async function POST(req: Request) {
           Thank you for joining the <strong>Belonge</strong> waitlist — we are so glad you’re here 💜  
           You've just joined a community that's redefining how people connect — a safe, uplifting space where you can find your people, build real community, and access support that helps you grow.
         </p>
-
         <p>
           From friendship and mental wellbeing to career and business growth, Belonge brings together everything that helps you feel seen, supported, and connected.
         </p>
