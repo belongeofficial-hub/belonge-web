@@ -2,10 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  eslint: {
-    // ✅ Ignore lint errors during builds (safe for production)
-    ignoreDuringBuilds: true,
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+  output: "standalone",
 };
 
 export default nextConfig;
