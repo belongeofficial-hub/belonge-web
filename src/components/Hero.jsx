@@ -1,3 +1,4 @@
+'use client';
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[80vh] bg-gradient-to-b from-[#00C4CC] to-[#7B61FF] text-center text-white px-6">
@@ -12,24 +13,39 @@ export default function Hero() {
       </div>
 
       {/* Tagline */}
-      <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-6 max-w-3xl">
-        You’re Never Alone. <br />
-        <span className="font-bold text-white">You Belonge.</span>
-      </h1>
+ <h1
+  className="text-4xl md:text-6xl font-semibold mb-4 text-center text-white opacity-0 animate-fadeIn"
+>
+  Welcome to <span className="text-white">Belonge</span>.
+</h1>
 
-      {/* Subtext */}
-      <p className="max-w-xl text-lg opacity-90 mb-8">
-        Connect through your community, events, networking, and support. <br />
-        Belonge anywhere, grow everywhere.
-      </p>
+<p
+  className="text-base md:text-lg max-w-2xl mx-auto text-gray-50 leading-relaxed font-light mb-6 text-center opacity-0 animate-fadeIn delay-200"
+>
+  A safe and uplifting space built to end loneliness.
+  Here, you can find your people, nurture real connections,
+  find companionship, and grow with care and support.
+</p>
+
+<p
+  className="text-sm md:text-base text-gray-100 text-center mb-10 opacity-0 animate-fadeIn delay-400"
+>
+  Connect through your community, events, networking, and support. <br />
+</p>
+
 
       {/* CTA */}
-      <a
-        href="#join"
-        className="mt-4 bg-white text-[#7B61FF] font-semibold px-10 py-3 rounded-full shadow-lg border border-white/40 hover:bg-[#7B61FF] hover:text-white hover:shadow-xl transition-all duration-300"
-      >
-        Get Started
-      </a>
+  <button
+  onClick={() =>
+    document
+      .getElementById('onboarding')
+      ?.scrollIntoView({ behavior: 'smooth' })
+  }
+  className="mt-6 bg-white text-[#7B61FF] font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-[#f3f0ff] transition"
+>
+  Get Started
+</button>
+
     </section>
   );
 }

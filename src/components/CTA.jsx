@@ -1,4 +1,6 @@
-export default function CTA() {
+
+'use client';
+import Link from 'next/link';export default function CTA() {
   return (
     <section
       id="cta"
@@ -20,12 +22,12 @@ export default function CTA() {
         </p>
 
         {/* Button */}
-        <a
-          href="#join"
-          className="inline-block bg-white text-[#7B61FF] font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-[#F9F9FF] hover:shadow-xl transition-all duration-300"
-        >
-          Join Now
-        </a>
+      
+ <Link href="/join-the-waitlist"
+  className="inline-block bg-white text-[#7B61FF] font-semibold px-10 py-4 rounded-lg shadow-md hover:bg-[#f3f0ff] transition"
+>
+  Join Now
+</Link>
       </div>
     </section>
   );

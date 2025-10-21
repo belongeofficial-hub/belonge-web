@@ -6,7 +6,8 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="bg-gray-50 py-24 text-center">
+    <section id="discover" className="relative py-20 ...">
+
       <h2 className="text-4xl font-bold mb-4">Why Choose Belonge?</h2>
       <p className="max-w-xl mx-auto text-gray-600 mb-12">
         We’re more than just another social app — we’re your trusted partner in building authentic connections.
