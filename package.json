@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "git add . && git commit -m '🚀 Auto-deploy update' && git push origin main"
   },
   "dependencies": {
     "@react-email/render": "^1.4.0",
