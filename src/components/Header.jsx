@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
 <header className="fixed w-full bg-white/90 backdrop-blur-xl border-b border-white/30 z-50 shadow-sm h-[64px] md:h-[68px] flex items-center justify-between px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+<div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
         
         {/* Left: Login (mobile only) */}
         <Link
@@ -23,15 +23,14 @@ export default function Header() {
         {/* Center: Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none md:flex-shrink-0">
           <Link href="/" className="flex items-center justify-center">
- <div className="flex items-center ml-8 mt-[2px] md:mt-[4px]">
- <Image
-  src="/belonge-logo.png"
-  alt="Belonge logo"
-  width={230}
-  height={80}
-  className="object-contain translate-y-[1px]"
-  priority
-/>
+    <div className="relative flex justify-center items-center w-[260px] h-[100px] sm:w-[320px] sm:h-[110px] lg:w-[440px] lg:h-[140px]">
+  <Image
+    src="/belonge-logo.png"
+    alt="Belonge logo"
+    fill
+    priority
+    className="object-contain scale-125 md:scale-150"
+  />
 </div>
 
 
