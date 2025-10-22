@@ -29,8 +29,8 @@ export default function Header() {
           <Image
             src="/belonge-logo.png"
             alt="Belonge logo"
-            width={240}
-            height={80}
+            width={320}
+            height={100}
             className="w-auto h-12 md:h-16 lg:h-20"
             priority
           />
@@ -101,12 +101,12 @@ export default function Header() {
             >
               Login
             </Link>
-            <Link
-              href="/join"
-              className="bg-gradient-to-r from-[#7F56D9] to-[#30B6A4] text-white px-5 py-2 rounded-full font-semibold hover:opacity-90 transition transform hover:-translate-y-0.5"
-            >
-              Join Now
-            </Link>
+           <Link
+  href="/join"
+  className="ml-4 bg-gradient-to-r from-[#7F56D9] to-[#30B6A4] text-white px-5 py-2 rounded-full font-semibold shadow-sm hover:opacity-90 transition transform hover:-translate-y-0.5"
+>
+  Join Now
+</Link>
           </div>
         </nav>
 
