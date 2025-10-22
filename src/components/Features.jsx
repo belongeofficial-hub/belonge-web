@@ -6,7 +6,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="discover" className="relative py-20 ...">
+    <section className="py-20 bg-white text-center">
 
       <h2 className="text-4xl font-bold mb-4">Why Choose Belonge?</h2>
       <p className="max-w-xl mx-auto text-gray-600 mb-12">

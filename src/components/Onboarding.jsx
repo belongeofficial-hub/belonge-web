@@ -1,17 +1,25 @@
 'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+
 
 export default function Onboarding() {
   const [choice, setChoice] = useState('');
   const [showWaitlist, setShowWaitlist] = useState(false);
+  const router = useRouter();
+
+  
 
   const options = [
-    { label: '💬 Make Friends', value: 'friends' },
-    { label: '💼 Grow My Career', value: 'career' },
-    { label: '💖 Find Love', value: 'love' },
-    { label: '🌱 Explore Local Events', value: 'events' },
-  ];
+  { value: 'friends', label: 'Make Friends', icon: '\u{1F4AC}' },          // 💬
+  { value: 'career', label: 'Grow My Career', icon: '\u{1F4BC}' },        // 💼
+  { value: 'love', label: 'Find Love', icon: '\u{1F496}' },               // 💖
+  { value: 'exploreEvents', label: 'Explore Local Events', icon: '\u{1F39F}\uFE0F' }, // 🎟️
+  { value: 'community', label: 'Find My Community', icon: '\u{1FAF6}' },  // 🫶
+];
+
+
 
   const handleSelect = (value) => {
 
@@ -69,11 +77,8 @@ export default function Onboarding() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() =>
-                document
-                  .getElementById('join-section')
-                  ?.scrollIntoView({ behavior: 'smooth' })
-              }
+              onClick={() => router.push('/join-the-waitlist')}
+
               className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium shadow-md transition"
             >
               ✨ Join the Waitlist

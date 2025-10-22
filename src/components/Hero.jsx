@@ -1,7 +1,8 @@
 'use client';
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[80vh] bg-gradient-to-b from-[#00C4CC] to-[#7B61FF] text-center text-white px-6">
+<section className="relative pt-24 pb-16 text-center bg-gradient-to-b from-[#3BC9DB] to-[#7048E8] text-white">
+  <div className="relative z-10">
       
       {/* Logo */}
       <div className="mb-10">
@@ -13,22 +14,17 @@ export default function Hero() {
       </div>
 
       {/* Tagline */}
- <h1
-  className="text-4xl md:text-6xl font-semibold mb-4 text-center text-white opacity-0 animate-fadeIn"
->
+ <h1 className="text-6xl md:text-8xl font-bold mb-6 drop-shadow-lg animate-fadeInSoft delay-200">
   Welcome to <span className="text-white">Belonge</span>.
 </h1>
 
-<p
-  className="text-base md:text-lg max-w-2xl mx-auto text-gray-50 leading-relaxed font-light mb-6 text-center opacity-0 animate-fadeIn delay-200"
->
-  A safe and uplifting space built to end loneliness.
-  Here, you can find your people, nurture real connections,
+<p className="text-sm md:text-base text-gray-40 text-center mb-6 drop-shadow-lg animate-fadeIn delay-400 max-w-2xl mx-auto leading-relaxed">
+  A safe and uplifting space built to end loneliness. Here, you can find your people, nurture real connections,
   find companionship, and grow with care and support.
 </p>
 
 <p
-  className="text-sm md:text-base text-gray-100 text-center mb-10 opacity-0 animate-fadeIn delay-400"
+  className="text-sm md:text-base text-gray-100 text-center mb-10 animate-fadeIn delay-400"
 >
   Connect through your community, events, networking, and support. <br />
 </p>
@@ -45,6 +41,7 @@ export default function Hero() {
 >
   Get Started
 </button>
+  </div>
 
     </section>
   );
