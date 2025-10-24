@@ -11,7 +11,7 @@ const message = `
   ">
     <div style="text-align:center; margin-bottom: 24px;">
       <img
-        src="https://belonge-assets.s3.eu-west-2.amazonaws.com/logo.png"
+        src="https://belonge-assets.s3.eu-west-2.amazonaws.com/belonge-logo.png"
         alt="Belonge Logo"
         style="height:70px; margin-bottom: 10px;"
       />
