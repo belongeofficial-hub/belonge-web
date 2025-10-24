@@ -18,20 +18,25 @@ export const metadata: Metadata = {
   description:
     "Belonge helps you connect with people, grow your career, build your business, and discover genuine companionship — all in one community.",
   icons: {
-    icon: "/favicon.png", // this points to your favicon file inside /public
+    icon: "/favicon.png", // ✅ ensure your favicon.png is in the /public folder
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        {/* 🔥 Add a manual fallback <title> for mobile cache */}
+        <title>Belonge | Find Your People. Grow Your Career. Find Your Companion.</title>
+        <meta
+          name="description"
+          content="Belonge helps you connect with people, grow your career, build your business, and discover genuine companionship — all in one community."
+        />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
