@@ -8,7 +8,7 @@ export default function BelongeHeroSlider() {
     {
       video: "/videos/belonge-hero1.mp4",
       text: "Welcome to Belonge 🤝",
-      subtext: "Find Your Community. Feel at Home.",
+      subtext: "Find Your People. Grow Your Career. Find Your Companion.",
           overlay: "bg-black/60", // darker for this one only
 
     },
